@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="821.0" prefWidth="542.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controler.RegisterController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="807.0" prefWidth="691.0">
+         <left>
+            <AnchorPane prefHeight="781.0" prefWidth="236.0" style="-fx-background-color: #00FFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="18.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" />
+                  <Button fx:id="btnRegister" layoutX="39.0" layoutY="725.0" mnemonicParsing="false" onAction="#registerCustomer" prefHeight="32.0" prefWidth="151.0" style="-fx-background-color: #D7DF01;" text="Registrieren" />
+               </children></AnchorPane>
+         </left>
+         <center>
+            <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="723.0" prefWidth="267.0" style="-fx-background-color: #AC58FA;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="114.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="86.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="192.0" minHeight="0.0" prefHeight="8.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="394.0" minHeight="4.0" prefHeight="74.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="124.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="128.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="115.0" text="Anrede" textFill="#31f2a1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <ComboBox fx:id="comboBoxSalutation" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Vorname" textFill="#31f2a1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtFieldFirstname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Nachname" textFill="#31f2a1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtFieldSurname" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Email" textFill="#31f2a1" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtFieldEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <DatePicker fx:id="datePickerDate" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Passwort" textFill="#31f2a1" GridPane.rowIndex="6" />
+                  <PasswordField fx:id="passwordFieldPassword" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Passwort" textFill="#31f2a1" GridPane.rowIndex="7" />
+                  <PasswordField fx:id="passwordFieldPasswordRepeat" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Geburtsdatum" textFill="#31f2a1" GridPane.rowIndex="5" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>
