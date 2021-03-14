@@ -3,6 +3,7 @@ package org.example.DaoResources;
 import org.example.Model.Customer;
 
 import java.sql.*;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class CustomerDaoMariaDB implements CustomerDao
@@ -89,19 +90,27 @@ public class CustomerDaoMariaDB implements CustomerDao
     }
     public int update(Customer c)
     {
+        int isSuccess;
         try
         {
-            con.setAutoCommit(false);
-            stmt = con.createStatement();
-            //stmt.addBatch();
-            stmt.executeBatch();
+            PreparedStatement ps = con.prepareStatement("update customer set  CUSTOMER_FIRSTNAME=?,CUSTOMER_LASTNAME=?,CUSTOMER_DATEOFBIRTH=?,CUSTOMER_EMAIL=?,CUSTOMER_GENDER=? where CUSTOMER_ID=?");
+            ps.setString(1, c.getName());
+            ps.setString(2, c.getSurName());
+            ps.setString(3, c.getDateOfBirth().toString());
+            ps.setString(4, c.getEmail());
+            ps.setString(5, c.getGender());
+            ps.setString(6, String.valueOf(c.getCostumerID()));
+            ps.executeQuery();
+            ps.close();
+            isSuccess = 1;
         } catch (SQLException e)
         {
             // TODO Auto-generated catch block
             e.printStackTrace();
+            isSuccess = -1;
         }
 
-        return 0;
+        return isSuccess;
     }
     public int delete(Customer c)
     {
@@ -129,7 +138,9 @@ public class CustomerDaoMariaDB implements CustomerDao
 
             while(rs.next())
             {
-                c = new Customer(Integer.parseInt(rs.getString("CUSTOMER_ID")),rs.getString("CUSTOMER_FIRSTNAME"),rs.getString("CUSTOMER_LASTNAME"),rs.getString("CUSTOMER_EMAIL"),Date.valueOf(rs.getString("CUSTOMER_DATEOFBIRTH")),rs.getString("CUSTOMER_PASSWORD"),rs.getString("CUSTOMER_GENDER"));
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyy-MM-dd");
+                String formattedValue = (rs.getString("CUSTOMER_DATEOFBIRTH")).format(formatter.toString());
+                c = new Customer(Integer.parseInt(rs.getString("CUSTOMER_ID")),rs.getString("CUSTOMER_FIRSTNAME"),rs.getString("CUSTOMER_LASTNAME"),rs.getString("CUSTOMER_EMAIL"),Date.valueOf(rs.getString("CUSTOMER_DATEOFBIRTH")),rs.getString("CUSTOMER_GENDER"));
             }
             rs.close();
             ps.close();

@@ -17,6 +17,7 @@ public class AccountController implements Initializable
     @FXML private Label lblLastname;
     @FXML private Label lblEmail;
     @FXML private Label lblDateOfBirth;
+    @FXML private Label lblGender;
     @FXML private Button btnEditData;
     Customer c = null;
     @Override
@@ -28,6 +29,7 @@ public class AccountController implements Initializable
         lblLastname.textProperty().bind(c.surnameProperty());
         lblEmail.textProperty().bind(c.emailProperty());
         lblDateOfBirth.setText(c.getDateOfBirth().toString());
+        lblGender.textProperty().bind(c.genderProperty());
     }
     public void editData() throws IOException
     {

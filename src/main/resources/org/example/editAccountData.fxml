@@ -31,6 +31,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
                         <Label text="Firstname">
@@ -53,20 +54,26 @@
                                 <Font size="15.0" />
                             </font>
                         </Label>
-                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#updateAccountData" style="-fx-background-color: #DF7401;" text="Update your Data" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#updateAccountData" style="-fx-background-color: #DF7401;" text="Update your Data" GridPane.columnSpan="2" GridPane.rowIndex="6">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </Button>
-                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#changePassword" style="-fx-background-color: #DF7401;" text="Change your Password" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#changePassword" style="-fx-background-color: #DF7401;" text="Change your Password" GridPane.columnSpan="2" GridPane.rowIndex="5">
                                 <font>
-                                    <Font size="15.0"/>
+                                    <Font size="15.0" />
                                 </font>
                         </Button>
-                        <Label fx:id="lblFirstname" GridPane.columnIndex="1" />
-                        <Label fx:id="lblLastname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="lblEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="lblDateOfBirth" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Gender" GridPane.rowIndex="4">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtFieldGender" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="txtFieldFirstname" GridPane.columnIndex="1" />
+                        <TextField fx:id="txtFieldLastname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtFieldEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <DatePicker fx:id="datePickerDateOfBirth" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                     </children>
                 </GridPane>
             </center>

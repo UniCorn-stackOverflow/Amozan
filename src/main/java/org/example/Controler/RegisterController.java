@@ -51,7 +51,7 @@ public class RegisterController implements Initializable
     @FXML
     private void registerCustomer() throws IOException
     {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyy-MM-dd",Locale.GERMAN);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyy-MM-dd");
         String formattedValue = (datePickerDate.getValue()).format(formatter);
         c.setDateOfBirth(Date.valueOf(formattedValue));
         org.example.Model.Register r = new Register();

@@ -4,6 +4,8 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
@@ -31,14 +33,17 @@ public class Customer extends Human
         this.dateOfBirth = dateOfBirth;
     }
     public Customer(){}
-    public Customer(String name,String lastName,String email,String dateOfBirth)
+    public Customer(int customerID,String name,String lastName,String email,Date dateOfBirth,String gender)
     {
+        this.customerID = customerID;
         this.setName(name);
         this.setSirName(lastName);
         this.setEmail(email);
-        this.setDateOfBirth(Date.valueOf(dateOfBirth))
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyy-MM-dd", Locale.GERMAN);
-        String formattedValue = (dateOfBirth).format(formatter);
+        this.setGender(gender);
+
+        this.setDateOfBirth( dateOfBirth);
+
+
     }
     /*public Costumer(String name,String sirName,String email,String password,String gender,String dateOfBirth)
     {
