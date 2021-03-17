@@ -3,14 +3,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="1081.0" fx:controller="org.example.Controler.AmozanMainController" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controler.AmozanMainController">
    <top>
       <ToolBar maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #df013a;" BorderPane.alignment="CENTER">
         <items>
-            <Button fx:id="btnAccount" mnemonicParsing="false" onAction="#showAccount" style="-fx-background-color: #886A08;" text="Account" />
+            <Button fx:id="btnAccount" mnemonicParsing="false" onAction="#showAccount" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: #FFFFFF;" styleClass="firstButton" stylesheets="file:/C:/Users/maiks/IdeaProjects/Amozan/src/main/java/org/example/CssRecources/AccountButton.css" />
           <Button fx:id="btnOrderHistory" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #886A08;" text="your Orders" />
-            <Button fx:id="btnOrder" mnemonicParsing="false" style="-fx-background-color: #886A08;" text="Order" />
+            <Button fx:id="btnOrder" mnemonicParsing="false" prefHeight="21.0" prefWidth="34.0" style="-fx-background-color: #FFFFFF;" styleClass="secondButton" stylesheets="file:/C:/Users/maiks/IdeaProjects/Amozan/src/main/java/org/example/CssRecources/AccountButton.css" />
             <Button mnemonicParsing="false" style="-fx-background-color: #886A08;" text="Button" />
         </items>
       </ToolBar>
