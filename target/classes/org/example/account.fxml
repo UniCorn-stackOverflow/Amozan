@@ -33,27 +33,27 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Firstname">
+                  <Label fx:id="sAccFirstname">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label text="Lastname" GridPane.rowIndex="1">
+                  <Label fx:id="sAccLastname" GridPane.rowIndex="1">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label text="Email" GridPane.rowIndex="2">
+                  <Label fx:id="sAccEmail" GridPane.rowIndex="2">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label text="Date Of Birth" GridPane.rowIndex="3">
+                  <Label fx:id="sAccDateOfBirth" GridPane.rowIndex="3">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btnEditData" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#editData" style="-fx-background-color: #DF7401;" text="Edit you Acount Data" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                  <Button fx:id="btnEditData" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#editData" style="-fx-background-color: #DF7401;" GridPane.columnSpan="2" GridPane.rowIndex="5">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -62,7 +62,7 @@
                   <Label fx:id="lblLastname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label fx:id="lblEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label fx:id="lblDateOfBirth" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Label text="Gender" GridPane.rowIndex="4">
+                  <Label fx:id="sAccGender" GridPane.rowIndex="4">
                      <font>
                         <Font size="15.0" />
                      </font>

@@ -34,37 +34,37 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Label text="Firstname">
+                        <Label fx:id="accFirstname">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </Label>
-                        <Label text="Lastname" GridPane.rowIndex="1">
+                        <Label fx:id="accLastname" GridPane.rowIndex="1">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </Label>
-                        <Label text="Email" GridPane.rowIndex="2">
+                        <Label fx:id="accEmail" GridPane.rowIndex="2">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </Label>
-                        <Label text="Date Of Birth" GridPane.rowIndex="3">
+                        <Label fx:id="accDateOfBirth" GridPane.rowIndex="3">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </Label>
-                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#updateAccountData" style="-fx-background-color: #DF7401;" text="Update your Data" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                        <Button fx:id="accUpdateAccountData" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#updateAccountData" style="-fx-background-color: #DF7401;" GridPane.columnSpan="2" GridPane.rowIndex="6">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </Button>
-                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#changePassword" style="-fx-background-color: #DF7401;" text="Change your Password" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                        <Button fx:id="accChangePassword" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#changePassword" style="-fx-background-color: #DF7401;" GridPane.columnSpan="2" GridPane.rowIndex="5">
                                 <font>
                                     <Font size="15.0" />
                                 </font>
                         </Button>
-                        <Label text="Gender" GridPane.rowIndex="4">
+                        <Label fx:id="accGender" GridPane.rowIndex="4">
                             <font>
                                 <Font size="15.0" />
                             </font>

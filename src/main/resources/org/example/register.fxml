@@ -34,20 +34,20 @@
                   <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="115.0" text="Anrede" textFill="#31f2a1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Label fx:id="registerSalutation" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="115.0" text="" textFill="#31f2a1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                   <ComboBox fx:id="comboBoxSalutation" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Vorname" textFill="#31f2a1" GridPane.rowIndex="2" />
+                  <Label fx:id="registerFirstname" alignment="CENTER" maxWidth="1.7976931348623157E308" text="" textFill="#31f2a1" GridPane.rowIndex="2" />
                   <TextField fx:id="txtFieldFirstname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Nachname" textFill="#31f2a1" GridPane.rowIndex="3" />
+                  <Label fx:id="registerLastname" alignment="CENTER" maxWidth="1.7976931348623157E308" text="" textFill="#31f2a1" GridPane.rowIndex="3" />
                   <TextField fx:id="txtFieldSurname" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Email" textFill="#31f2a1" GridPane.rowIndex="4" />
+                  <Label fx:id="registerEmail" alignment="CENTER" maxWidth="1.7976931348623157E308" text="" textFill="#31f2a1" GridPane.rowIndex="4" />
                   <TextField fx:id="txtFieldEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   <DatePicker fx:id="datePickerDate" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Passwort" textFill="#31f2a1" GridPane.rowIndex="6" />
+                  <Label fx:id="registerPassword" alignment="CENTER" maxWidth="1.7976931348623157E308" text="" textFill="#31f2a1" GridPane.rowIndex="6" />
                   <PasswordField fx:id="passwordFieldPassword" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Passwort" textFill="#31f2a1" GridPane.rowIndex="7" />
+                  <Label fx:id="registerPasswordRepeat" alignment="CENTER" maxWidth="1.7976931348623157E308" text="" textFill="#31f2a1" GridPane.rowIndex="7" />
                   <PasswordField fx:id="passwordFieldPasswordRepeat" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Geburtsdatum" textFill="#31f2a1" GridPane.rowIndex="5" />
+                  <Label fx:id="registerDateOfBirth" alignment="CENTER" maxWidth="1.7976931348623157E308" text="" textFill="#31f2a1" GridPane.rowIndex="5" />
                </children>
                <BorderPane.margin>
                   <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />

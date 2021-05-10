@@ -30,18 +30,20 @@
                   <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="666.0" style="-fx-background-color: #00C7B0;" text="Please Login your Account" GridPane.columnSpan="2147483647">
+                  <Label fx:id="loginTitle" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="666.0" style="-fx-background-color: #00C7B0;" GridPane.columnSpan="2147483647">
                      <font>
                         <Font size="31.0" />
                      </font>
                   </Label>
                   <TextField fx:id="txtFieldEmail" prefHeight="38.0" prefWidth="327.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #6F0B77;" text="email" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
-                  <Label alignment="CENTER" maxWidth="-Infinity" prefHeight="24.0" prefWidth="180.0" style="-fx-background-color: #6F0B77;" text="Password" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
-                  <Button fx:id="registerButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Register" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #C100AB;" text="Register" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <Button fx:id="continueAsGuestButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #C100AB;" text="Continue As Guest" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="loginEmail" alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: #6F0B77;" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                  <Label fx:id="loginPassword" alignment="CENTER" maxWidth="-Infinity" prefHeight="24.0" prefWidth="180.0" style="-fx-background-color: #6F0B77;" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                  <Button fx:id="registerButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Register" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #C100AB;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="continueAsGuestButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #C100AB;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                   <PasswordField fx:id="passwordFieldPassword" prefHeight="37.0" prefWidth="327.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Button fx:id="btnLogin" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: #C100AB;" text="Login" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnLogin" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: #C100AB;" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <ComboBox fx:id="comboBoxLanguage" onAction="#auswahl" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                  <Label fx:id="loginLanguage" prefHeight="17.0" prefWidth="80.0" textFill="#c61212" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
                </children>
             </GridPane>
          </center>

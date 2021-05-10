@@ -15,6 +15,9 @@
       </ToolBar>
    </top>
    <center>
-      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="comboBoxLanguage" onAction="#auswhal" layoutX="787.0" layoutY="14.0" prefWidth="150.0" />
+         </children></Pane>
    </center>
 </BorderPane>
